@@ -1,3 +1,5 @@
+var prompt = require('sync-prompt').prompt;
+
 var player1 = 0;
 var player2 = 1;
 var lives = [3, 3];
@@ -7,9 +9,9 @@ var num1
 var num2
 var opIndex = 0;
 var operators = ["+", "-", "*", "/"];
-window.onload = function() {
-	gameLoop();
-}
+
+gameLoop();
+
 
 function minusLife() {
 	if (turn == player1) {
@@ -57,10 +59,10 @@ function gameLoop() {
 		var answer = questionAnswer();
 
 		if (correct(answer)) {
-			alert("You're a math whiz!");
+			console.log("You're a math whiz!");
 		} else {
 			minusLife();
-			alert("Wrong! You only have " + lives[turn] + " lives left");
+			console.log("Wrong! You only have " + lives[turn] + " lives left");
 		}
 
 		changeTurn();

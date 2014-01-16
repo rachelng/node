@@ -1,0 +1,19 @@
+{
+  "name": "math-game",
+  "version": "0.0.0",
+  "description": "math game on node",
+  "main": "mathgame.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "node"
+  },
+  "keywords": [
+    "math",
+    "game"
+  ],
+  "author": "Rachel",
+  "license": "BSD-2-Clause"
+}
